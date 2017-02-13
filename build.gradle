@@ -1,0 +1,26 @@
+group 'ninja.sakib.machine.learning'
+version '1.0'
+
+buildscript {
+    ext.kotlin_version = '1.0.5'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'ninja.sakib:PultusORM:v1.3'
+    compile 'com.github.ptnplanet:Java-Naive-Bayes-Classifier:1.0.5'
+}

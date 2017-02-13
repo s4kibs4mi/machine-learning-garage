@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/machine-learning-garage.iml" filepath="$PROJECT_DIR$/.idea/modules/machine-learning-garage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/machine-learning-garage_main.iml" filepath="$PROJECT_DIR$/.idea/modules/machine-learning-garage_main.iml" group="machine-learning-garage" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/machine-learning-garage_test.iml" filepath="$PROJECT_DIR$/.idea/modules/machine-learning-garage_test.iml" group="machine-learning-garage" />
+    </modules>
+  </component>
+</project>
