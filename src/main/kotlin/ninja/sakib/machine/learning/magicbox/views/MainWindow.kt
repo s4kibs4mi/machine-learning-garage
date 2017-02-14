@@ -1,8 +1,8 @@
-package ninja.sakib.machine.learning.views
+package ninja.sakib.machine.learning.magicbox.views
 
 import de.daslaboratorium.machinelearning.classifier.bayes.BayesClassifier
-import ninja.sakib.machine.learning.daos.WordDao
-import ninja.sakib.machine.learning.models.Word
+import ninja.sakib.machine.learning.magicbox.daos.WordDao
+import ninja.sakib.machine.learning.magicbox.models.Word
 import java.awt.Dimension
 import javax.swing.*
 import kotlin.properties.Delegates
@@ -24,6 +24,8 @@ class MainWindow : JFrame() {
     }
 
     private fun initComponents() {
+        title = "Magic Box"
+
         learnBtn = JButton()
         classifyBtn = JButton()
         result = JLabel()
@@ -73,18 +75,22 @@ class MainWindow : JFrame() {
     }
 
     private fun addNewWord() {
-        val label: String = JOptionPane.showInputDialog("Enter Label :")
         val text: String = JOptionPane.showInputDialog("Enter Text :")
+        if (text != null) {
+            val label: String = JOptionPane.showInputDialog("Enter Label :")
+            if (label != null) {
 
-        val word = Word()
-        word.label = label
-        word.text = text
-        WordDao.save(word)
+                val word = Word()
+                word.label = label
+                word.text = text
+                WordDao.save(word)
 
-        val tokenizeText = text.split(" ")
-        bayesClassifier.learn(label, tokenizeText)
+                val tokenizeText = text.split(" ")
+                bayesClassifier.learn(label, tokenizeText)
 
-        JOptionPane.showMessageDialog(this, "Added")
+                JOptionPane.showMessageDialog(this, "Added")
+            }
+        }
     }
 
     private fun classify() {

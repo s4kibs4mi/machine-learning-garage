@@ -21,6 +21,6 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'ninja.sakib:PultusORM:v1.3'
-    compile 'com.github.ptnplanet:Java-Naive-Bayes-Classifier:1.0.5'
+    compile "ninja.sakib:PultusORM:v1.3"
+    compile "com.github.ptnplanet:Java-Naive-Bayes-Classifier:1.0.5"
 }

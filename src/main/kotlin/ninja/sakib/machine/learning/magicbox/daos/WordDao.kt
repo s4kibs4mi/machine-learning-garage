@@ -1,6 +1,6 @@
-package ninja.sakib.machine.learning.daos
+package ninja.sakib.machine.learning.magicbox.daos
 
-import ninja.sakib.machine.learning.models.Word
+import ninja.sakib.machine.learning.magicbox.models.Word
 import ninja.sakib.pultusorm.core.PultusORM
 import kotlin.properties.Delegates
 

@@ -1,4 +1,4 @@
-package ninja.sakib.machine.learning.models
+package ninja.sakib.machine.learning.magicbox.models
 
 /**
  * @author Sakib Sami

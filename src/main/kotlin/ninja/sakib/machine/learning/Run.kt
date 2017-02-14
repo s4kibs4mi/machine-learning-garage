@@ -1,6 +1,6 @@
 package ninja.sakib.machine.learning
 
-import ninja.sakib.machine.learning.views.MainWindow
+import ninja.sakib.machine.learning.magicbox.views.MainWindow
 
 /**
  * @author Sakib Sami
